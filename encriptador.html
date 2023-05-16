@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta cahrset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0    ">
+    <link href="C:/Users/admin/Desktop/challengerG5ONE/reset.css" rel="stylesheet" type="text/css">
+	<link href="C:/Users/admin/Desktop/challengerG5ONE/style.css" rel="stylesheet" type="text/css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700&family=Inter:wght@100;200;300;900&display=swap" rel="stylesheet">
+    
+    <title>Encriptador de Texto- Reto Alura</title>
+
+
+</head>
+<body>
+    <header>
+        <div class="Encabezado">
+        <h1><img src="C:/Users/admin/Desktop/challengerG5ONE/Logo.jpg" alt="Logo Alura" class="logo"></h1><h1 class="titulo"> Encriptador de texto - Reto Alura</h1>
+        </div>
+        
+    </header>
+    <main>
+        <section>
+
+            <textarea id="textArea" class="textArea" rows="10" cols="50" placeholder="Ingrese el texto aqui"></textarea> 
+
+            <div class="info2">
+            
+                <img  class="icono" src="C:/Users/admin/Desktop/challengerG5ONE/triangle-danger-f.svg"><p class="informacion">ingrese solo letras minusculas, sin acentos, ni caracteres especiales</p>
+            </div>
+
+            <div class="botones">
+
+                <button class="btnEncriptar" onclick="encriptar()">encriptar</button> 
+                <button class="btnDesencriptar" onclick="desencriptar()"> Desencriptar</button>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <textarea id="mensaje" class="mensaje"rows="10" cols="30" placeholder=" "></textarea>
+
+            <div>
+                <button id="copiar" class="copiar" onclick="copiar_texto()"> Copiar </button>
+            </div>
+
+        </section>
+    </main>
+<script src="C:/Users/admin/Desktop/challengerG5ONE/script.js"></script>    
+</body>
+</html>
