@@ -1,0 +1,285 @@
+/*Aqui empieza el estilo para el logo y el titulo*/
+*{
+   background: #f3f5fc;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.encabezado{
+   width: 100%;
+   padding: -2px;
+   background-image: url("c:Users/admin/Desktop/challengerG5ONE/Archivo_imagenes/fondo.jpeg");
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo{
+   padding: 4px;
+   border:15x;
+   margin:25px;
+   width:66%;
+}
+
+.titulo{
+   font-family: 'Chakra Petch', sans-serif;
+   font-size: 3em;
+   padding: 14px;
+   border:10px;
+   margin: 20px;
+   font-weight: bold;
+   vertical-align: center;
+}
+
+.programa{
+   display:flex;
+}
+
+main{ 
+   width:1000%;
+   height: 1000%;
+   display: flex;
+   padding: 15px;
+   border:15px;
+   margin:30px;
+}
+
+.ingreseTexto{
+    border: none;
+    color: #0a3871;
+    padding: 10px;
+    border:10px;
+    margin: 20px;
+    text-transform: lowercase;
+}
+
+.info2{
+   display: flex;
+}
+
+.icono{
+   width:43;
+   color:#495057;
+}
+
+.informacion{
+    color: #495057;
+    font-size: 25px;
+    font:"blod"
+}
+
+::placeholder { color: #0a3871, }
+    .text-area:focus{
+      outline: none;  
+    }
+
+.mensaje{
+    background: white;
+    background-image: url("C:Users/admin/Desktop/challengerG5ONE/Archivo_imagenes/muneco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top:20px;
+    padding-left: 40px;
+    position: static;
+ }
+
+ .mensaje:focus{
+    outline: none;
+ }
+
+ .botones{
+    display: flex;
+    margin-top: 18px;
+ }
+
+ .btnEncriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width:328px;  
+ }
+
+ .btnEncriptar:hover{
+   transform: scale(1, 1.3);
+ }
+ 
+ .btnDesencriptar{
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    Width: 328px;
+   }
+
+   .btnDesencriptar:hover{
+      transform: scale(1, 1.3);
+   }
+
+ .copiar{
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color:#0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 25px;
+    position: absolute;
+    Width: 336px;
+ }
+
+ .copiar:hover{
+   transform: scale(1, 1.3);
+ } 
+
+ .pieDePagina{
+   text-align: center;
+   color: black;
+   font-size: 2em;
+   background:#cccccc;
+   font-weight:bold;
+ }
+
+ /*LAS ESCEPCIONES DE PANTALLA CON MEDIA QUERY*/
+ @media screen and (min-width:278px) and (max-width:300px) {
+   .encabezado{ 
+      width: 397%;
+   }
+   .programa{
+      display:block;
+      justify-content: space-between;
+      text-align: center ;
+   }
+   .copiar:hover{
+      transform: scale(1,1.3);
+      }
+   .copiar{
+      text-align: center;
+      position: absolute;
+      left: 265px;
+   }
+   .pieDePagina{      
+      font-weight: bold;
+      padding: 91px;
+      position: absolute;
+      right: -430px;
+      vertical-align: baseline;
+      background: none;
+      font-size: 2em;
+   }
+ }
+
+@media screen and (min-width:359px) and (max-width:410px) {
+   .encabezado{ 
+      width: 398%;
+   }
+
+   .programa{
+   display: flex;
+   justify-content: space-between;
+   text-align: center ;
+
+   }
+   .copiar:hover{
+   transform: scale(1,1.3);
+   }
+   
+   .copiar{
+   text-align: center;
+   position: absolute;
+   left: 940px;
+   }
+   .pieDePagina{
+   
+   font-weight: bold;
+   padding: 0px;
+   position: absolute;
+   right: 700px;
+   vertical-align: baseline;
+   background: none;
+   font-size: 2em;
+   }
+}
+
+@media screen and (min-width:411px) and (max-width:538px) {
+   .encabezado{ 
+      width: 398%;
+   }
+   .pieDePagina{
+   
+      font-weight: bold;
+      padding: 0px;
+      position: absolute;
+      right: -571px;
+      vertical-align: baseline;
+      background: none;
+      font-size: 2em;
+   }
+}
+
+@media screen and (min-width:539px) and (max-width:767px) {
+   .encabezado{ 
+      width: 400%;
+   }
+   .pieDePagina{
+   
+      font-weight: bold;
+      padding: 0px;
+      position: absolute;
+      right: -730px;
+      vertical-align: baseline;
+      background: none;
+      font-size: 2em;
+      top:920px;
+   }
+   .programa{
+      text-align: center;
+      position: absolute;
+      right: -1200px;
+   }
+}
+
+@media screen and (min-width:768px) and (max-width:939px) {
+   .encabezado{ 
+      width: 400%;
+   }
+   .logo{
+      padding: 4px;
+   }
+   .programa{
+      
+      text-align: center;
+      position: absolute;
+      right: -1500px;
+   }
+   .pieDePagina{
+   
+      font-weight: bold;
+      padding: 0px;
+      position: absolute;
+      right: -730px;
+      vertical-align: baseline;
+      background: none;
+      font-size: 2em;
+      top:920px;
+   }
+   .copiar{
+      text-align: center;
+      position: absolute;
+      left:900px;
+      }
+}
+
+
+
+
+ 
